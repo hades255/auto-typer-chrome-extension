@@ -11,6 +11,15 @@
       "48": "images/icon-48.png",
       "128": "images/icon-128.png"
     },
-    "default_icon": "images/icon-16.png"
+    "default_icon": "images/icon-16.png",
+    "content_scripts": {
+      "js": [
+        "scripts/content.js"
+      ],
+      "matches": [
+        "https://developer.chrome.com/docs/extensions/*",
+        "https://developer.chrome.com/docs/webstore/*"
+      ]
+    }
   }
 }
