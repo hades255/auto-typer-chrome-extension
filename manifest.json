@@ -13,12 +13,12 @@
     },
     "default_icon": "images/icon-16.png",
     "content_scripts": {
+      "matches": ["<all_urls>"],
       "js": [
         "scripts/content.js"
       ],
-      "matches": [
-        "https://developer.chrome.com/docs/extensions/*",
-        "https://developer.chrome.com/docs/webstore/*"
+      "permissions": [
+        "activeTab"
       ]
     }
   }
