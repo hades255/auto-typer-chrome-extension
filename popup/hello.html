@@ -1,16 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <title>Email Autofill</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        padding: 10px;
+        width: 600px;
+      }
+      textarea {
+        margin-top: 10px;
+        padding: 10px;
+        width: 580px;
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello</title>
-</head>
-
-<body>
-  <h1>Hello Extension</h1>
-
-  <script src="popup.js"></script>
-</body>
-
+      button {
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <textarea type="text" id="bid" placeholder="Enter Bid"></textarea>
+      <button id="fillbid">Enter Bid</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
 </html>

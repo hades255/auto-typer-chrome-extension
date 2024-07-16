@@ -1,5 +1,7 @@
-const specialInput = document.querySelector("#special-input-id"); // Replace with your actual selector
+console.log("content.js");
+const specialInput = document.querySelector("#email-login"); // Replace with your actual selector
 
+console.log(specialInput);
 if (specialInput) {
   specialInput.addEventListener("focus", () => {
     console.log("Special input is focused!");

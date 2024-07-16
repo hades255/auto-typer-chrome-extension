@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Hello World Extensions",
   "description": "Base Level Extension",
-  "version": "1.0",
+  "version": "1.2",
   "action": {
     "default_popup": "popup/hello.html",
     "icons": {
@@ -11,15 +11,16 @@
       "48": "images/icon-48.png",
       "128": "images/icon-128.png"
     },
-    "default_icon": "images/icon-16.png",
-    "content_scripts": {
-      "matches": ["<all_urls>"],
-      "js": [
-        "scripts/content.js"
-      ],
-      "permissions": [
-        "activeTab"
-      ]
+    "default_icon": "images/icon-16.png"
+  },
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["<all_urls>"]
     }
-  }
+  ],
+  "permissions": ["activeTab", "scripting"]
 }
