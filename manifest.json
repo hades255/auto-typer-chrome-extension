@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "Hello World Extensions",
-  "description": "Base Level Extension",
+  "name": "Auto Typer",
+  "description": "Can type automatically once you set text to web page",
   "version": "1.2",
   "action": {
     "default_popup": "popup/hello.html",
